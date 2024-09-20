@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+<div class="checkout-container">
+    <h1>CheckOut</h1>
+
+    <div class="product-info">
+        <img src="img-1.jpg" alt="Tulip Merah Muda" class="product-image">
+        <div class="product-details">
+            <p><strong>Tulip Merah Muda</strong></p>
+            <p>Jumlah: 1</p>
+            <p>Harga: $17.99</p>
+        </div>
+    </div>
+
+    <div class="address-payment">
+        <div class="address">
+            <p><strong>Masukan Alamat :</strong></p>
+            <p>Jl. DI Panjaitan No.128, Karangreja, Purwokerto Kulon,<br>
+               Kec. Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah 53141</p>
+        </div>
+
+        <div class="payment-method">
+            <p><strong>Pembayaran :</strong></p>
+            <img src="payment.jpg" alt="Payment Methods" class="payment-image">
+        </div>
+    </div>
+
+    <div class="total-price">
+        <p><strong>TOTAL: $17.99</strong></p>
+    </div>
+
+    <div class="checkout-buttons">
+        <button class="cancel-btn" onclick="cancel()">CANCEL</button>
+        <button class="buy-btn" onclick="buy()">BUY</button>
+    </div>
+</div>
+
+<script>
+function cancel() {
+    alert("Pembelian dibatalkan.");
+    // Add any additional logic to handle cancellation
+}
+
+function buy() {
+    // Redirect to the next page after pressing BUY
+    window.location.href = "checkout2.html";
+}
+</script>
+
+</body>
+</html>
